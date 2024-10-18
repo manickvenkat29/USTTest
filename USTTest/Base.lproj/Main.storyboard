@@ -1,24 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="de3-Mr-kRM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="USTTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8O-Ys-FEr">
+                                <rect key="frame" x="92" y="404" width="209" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Hej-4J-wCm"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="google_newrul">
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="googleSignInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jux-6y-bal"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z8O-Ys-FEr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DMb-L7-5dt"/>
+                            <constraint firstItem="z8O-Ys-FEr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="mlS-qg-JCm"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="bd8-oN-0Ur"/>
+                    <connections>
+                        <outlet property="GsignInButton" destination="z8O-Ys-FEr" id="iHT-3S-owg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="849.61832061068696" y="3.5211267605633805"/>
+        </scene>
+        <!--Device Home View Controller-->
+        <scene sceneID="Bxs-Z3-zmf">
+            <objects>
+                <viewController id="OAX-Za-7wP" customClass="DeviceHomeViewController" customModule="USTTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="69v-D4-5RR">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="H1D-Na-K39"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSV-57-zhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="795"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="i0M-aw-Zn7">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="sTF-XY-IeM" customClass="HomeViewController" customModule="USTTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z33-uC-y1b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8sO-FA-huZ">
+                                <rect key="frame" x="0.0" y="119" width="393" height="699"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dIy-ov-KJO"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8sO-FA-huZ" firstAttribute="top" secondItem="dIy-ov-KJO" secondAttribute="top" constant="60" id="KzI-ik-GSu"/>
+                            <constraint firstItem="dIy-ov-KJO" firstAttribute="trailing" secondItem="8sO-FA-huZ" secondAttribute="trailing" id="dBC-bh-X05"/>
+                            <constraint firstItem="8sO-FA-huZ" firstAttribute="leading" secondItem="dIy-ov-KJO" secondAttribute="leading" id="lGG-2U-nNw"/>
+                            <constraint firstItem="dIy-ov-KJO" firstAttribute="bottom" secondItem="8sO-FA-huZ" secondAttribute="bottom" id="ulJ-uZ-taT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="deviceTableView" destination="8sO-FA-huZ" id="c4L-eT-OGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AlU-oB-K8P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2002.2900763358778" y="0.0"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xT6-x1-Q4H">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="de3-Mr-kRM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C3R-nU-ywx">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TcJ-ld-6X3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hgV-6b-4BO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-74.045801526717554" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="google_newrul" width="185" height="44"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

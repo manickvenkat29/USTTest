@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02605A0E7B9973FDBD106377 /* Pods_USTTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED4E5A61D01EBF494C0311 /* Pods_USTTest.framework */; };
 		68BC31132CC16F47000B95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31122CC16F47000B95CF /* AppDelegate.swift */; };
 		68BC31152CC16F47000B95CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31142CC16F47000B95CF /* SceneDelegate.swift */; };
 		68BC31172CC16F47000B95CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31162CC16F47000B95CF /* ViewController.swift */; };
-		68BC311A2CC16F47000B95CF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 68BC31192CC16F47000B95CF /* Base */; };
 		68BC311C2CC16F49000B95CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BC311B2CC16F49000B95CF /* Assets.xcassets */; };
 		68BC311F2CC16F49000B95CF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 68BC311E2CC16F49000B95CF /* Base */; };
 		68BC312A2CC16F49000B95CF /* USTTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31292CC16F49000B95CF /* USTTestTests.swift */; };
 		68BC31342CC16F49000B95CF /* USTTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31332CC16F49000B95CF /* USTTestUITests.swift */; };
 		68BC31362CC16F49000B95CF /* USTTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31352CC16F49000B95CF /* USTTestUITestsLaunchTests.swift */; };
+		68BC31452CC16F8A000B95CF /* OAuthLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31442CC16F8A000B95CF /* OAuthLoginManager.m */; };
+		68BC31492CC1701E000B95CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31482CC1701E000B95CF /* LoginViewController.swift */; };
+		68C5CED82CC1E51A00CBAC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BC31182CC16F47000B95CF /* Main.storyboard */; };
+		68C5CEDC2CC1F9D200CBAC06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */; };
+		68C5CEDE2CC202CC00CBAC06 /* DeviceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */; };
+		68C5CEE12CC2142D00CBAC06 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */; };
+		68C5CEE42CC2155700CBAC06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */; };
+		68C5CEE72CC2166E00CBAC06 /* USTTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE52CC2166D00CBAC06 /* USTTest.xcdatamodeld */; };
+		68C5CEEA2CC21C7B00CBAC06 /* DiscoveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE92CC21C7B00CBAC06 /* DiscoveryManager.swift */; };
+		E27B19D1D91ECD78FC62AE69 /* Pods_USTTest_USTTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 894A78190124B300ECC905EB /* Pods_USTTest_USTTestUITests.framework */; };
+		EF9B6F8A996E010509B20BD6 /* Pods_USTTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93F56052B85A1AD792E8448D /* Pods_USTTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C49E692C623DCEF50CE8F75 /* Pods-USTTest-USTTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest-USTTestUITests.release.xcconfig"; path = "Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5748702303C4E777A6260FCE /* Pods-USTTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest.debug.xcconfig"; path = "Target Support Files/Pods-USTTest/Pods-USTTest.debug.xcconfig"; sourceTree = "<group>"; };
 		68BC310F2CC16F47000B95CF /* USTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC31122CC16F47000B95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BC31142CC16F47000B95CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,24 @@
 		68BC312F2CC16F49000B95CF /* USTTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = USTTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC31332CC16F49000B95CF /* USTTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USTTestUITests.swift; sourceTree = "<group>"; };
 		68BC31352CC16F49000B95CF /* USTTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USTTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		68BC31432CC16F8A000B95CF /* USTTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "USTTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		68BC31442CC16F8A000B95CF /* OAuthLoginManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OAuthLoginManager.m; sourceTree = "<group>"; };
+		68BC31462CC16FBD000B95CF /* OAuthLoginManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OAuthLoginManager.h; sourceTree = "<group>"; };
+		68BC31482CC1701E000B95CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		68C5CED42CC1E17C00CBAC06 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHomeViewController.swift; sourceTree = "<group>"; };
+		68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
+		68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		68C5CEE62CC2166E00CBAC06 /* USTTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USTTest.xcdatamodel; sourceTree = "<group>"; };
+		68C5CEE92CC21C7B00CBAC06 /* DiscoveryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryManager.swift; sourceTree = "<group>"; };
+		6B3AD0AE13CB28861D4BABD8 /* Pods-USTTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTestTests.release.xcconfig"; path = "Target Support Files/Pods-USTTestTests/Pods-USTTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		894A78190124B300ECC905EB /* Pods_USTTest_USTTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USTTest_USTTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93F56052B85A1AD792E8448D /* Pods_USTTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USTTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A353173084EAB1426A500FDC /* Pods-USTTest-USTTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest-USTTestUITests.debug.xcconfig"; path = "Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B04A722E99AADC2EFDBBD1B9 /* Pods-USTTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest.release.xcconfig"; path = "Target Support Files/Pods-USTTest/Pods-USTTest.release.xcconfig"; sourceTree = "<group>"; };
+		C6961D9F03DF4038095750B5 /* Pods-USTTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTestTests.debug.xcconfig"; path = "Target Support Files/Pods-USTTestTests/Pods-USTTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F0ED4E5A61D01EBF494C0311 /* Pods_USTTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_USTTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				02605A0E7B9973FDBD106377 /* Pods_USTTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9B6F8A996E010509B20BD6 /* Pods_USTTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +103,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E27B19D1D91ECD78FC62AE69 /* Pods_USTTest_USTTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B3D3C7741994D56BA9B3C9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68C5CED42CC1E17C00CBAC06 /* AppAuth.framework */,
+				F0ED4E5A61D01EBF494C0311 /* Pods_USTTest.framework */,
+				894A78190124B300ECC905EB /* Pods_USTTest_USTTestUITests.framework */,
+				93F56052B85A1AD792E8448D /* Pods_USTTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		68BC31062CC16F47000B95CF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +128,8 @@
 				68BC31282CC16F49000B95CF /* USTTestTests */,
 				68BC31322CC16F49000B95CF /* USTTestUITests */,
 				68BC31102CC16F47000B95CF /* Products */,
+				812EE4FE2F6AEBEF7CB0E064 /* Pods */,
+				1B3D3C7741994D56BA9B3C9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +146,11 @@
 		68BC31112CC16F47000B95CF /* USTTest */ = {
 			isa = PBXGroup;
 			children = (
+				68C5CEE82CC21C6200CBAC06 /* Discovery */,
+				68C5CEE22CC2154000CBAC06 /* Coredata */,
+				68C5CEDF2CC2141400CBAC06 /* Models */,
+				68BC31472CC17006000B95CF /* Screens */,
+				68BC31422CC16F4E000B95CF /* Services */,
 				68BC31122CC16F47000B95CF /* AppDelegate.swift */,
 				68BC31142CC16F47000B95CF /* SceneDelegate.swift */,
 				68BC31162CC16F47000B95CF /* ViewController.swift */,
@@ -127,6 +179,64 @@
 			path = USTTestUITests;
 			sourceTree = "<group>";
 		};
+		68BC31422CC16F4E000B95CF /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				68BC31462CC16FBD000B95CF /* OAuthLoginManager.h */,
+				68BC31442CC16F8A000B95CF /* OAuthLoginManager.m */,
+				68BC31432CC16F8A000B95CF /* USTTest-Bridging-Header.h */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		68BC31472CC17006000B95CF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				68BC31482CC1701E000B95CF /* LoginViewController.swift */,
+				68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */,
+				68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		68C5CEDF2CC2141400CBAC06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68C5CEE22CC2154000CBAC06 /* Coredata */ = {
+			isa = PBXGroup;
+			children = (
+				68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */,
+				68C5CEE52CC2166D00CBAC06 /* USTTest.xcdatamodeld */,
+			);
+			path = Coredata;
+			sourceTree = "<group>";
+		};
+		68C5CEE82CC21C6200CBAC06 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				68C5CEE92CC21C7B00CBAC06 /* DiscoveryManager.swift */,
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		812EE4FE2F6AEBEF7CB0E064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5748702303C4E777A6260FCE /* Pods-USTTest.debug.xcconfig */,
+				B04A722E99AADC2EFDBBD1B9 /* Pods-USTTest.release.xcconfig */,
+				A353173084EAB1426A500FDC /* Pods-USTTest-USTTestUITests.debug.xcconfig */,
+				4C49E692C623DCEF50CE8F75 /* Pods-USTTest-USTTestUITests.release.xcconfig */,
+				C6961D9F03DF4038095750B5 /* Pods-USTTestTests.debug.xcconfig */,
+				6B3AD0AE13CB28861D4BABD8 /* Pods-USTTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +244,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68BC31392CC16F49000B95CF /* Build configuration list for PBXNativeTarget "USTTest" */;
 			buildPhases = (
+				BB661A2AD61F67CD36B3A5BD /* [CP] Check Pods Manifest.lock */,
 				68BC310B2CC16F47000B95CF /* Sources */,
 				68BC310C2CC16F47000B95CF /* Frameworks */,
 				68BC310D2CC16F47000B95CF /* Resources */,
+				C41743FD8D56BC3989DA5D27 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +263,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68BC313C2CC16F49000B95CF /* Build configuration list for PBXNativeTarget "USTTestTests" */;
 			buildPhases = (
+				9D59C405410ABDC62A2C5616 /* [CP] Check Pods Manifest.lock */,
 				68BC31212CC16F49000B95CF /* Sources */,
 				68BC31222CC16F49000B95CF /* Frameworks */,
 				68BC31232CC16F49000B95CF /* Resources */,
@@ -169,9 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68BC313F2CC16F49000B95CF /* Build configuration list for PBXNativeTarget "USTTestUITests" */;
 			buildPhases = (
+				FB9F213DC5209D5FF0F59DC1 /* [CP] Check Pods Manifest.lock */,
 				68BC312B2CC16F49000B95CF /* Sources */,
 				68BC312C2CC16F49000B95CF /* Frameworks */,
 				68BC312D2CC16F49000B95CF /* Resources */,
+				22679A166E3E3E915D1EA3F4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +310,7 @@
 				TargetAttributes = {
 					68BC310E2CC16F47000B95CF = {
 						CreatedOnToolsVersion = 15.3;
+						LastSwiftMigration = 1530;
 					};
 					68BC31242CC16F49000B95CF = {
 						CreatedOnToolsVersion = 15.3;
@@ -231,9 +347,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C5CED82CC1E51A00CBAC06 /* Main.storyboard in Resources */,
 				68BC311C2CC16F49000B95CF /* Assets.xcassets in Resources */,
 				68BC311F2CC16F49000B95CF /* Base in Resources */,
-				68BC311A2CC16F47000B95CF /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +369,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		22679A166E3E3E915D1EA3F4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D59C405410ABDC62A2C5616 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USTTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB661A2AD61F67CD36B3A5BD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USTTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C41743FD8D56BC3989DA5D27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USTTest/Pods-USTTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-USTTest/Pods-USTTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-USTTest/Pods-USTTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB9F213DC5209D5FF0F59DC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-USTTest-USTTestUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68BC310B2CC16F47000B95CF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68C5CEE72CC2166E00CBAC06 /* USTTest.xcdatamodeld in Sources */,
 				68BC31172CC16F47000B95CF /* ViewController.swift in Sources */,
+				68C5CEDE2CC202CC00CBAC06 /* DeviceHomeViewController.swift in Sources */,
+				68C5CEEA2CC21C7B00CBAC06 /* DiscoveryManager.swift in Sources */,
 				68BC31132CC16F47000B95CF /* AppDelegate.swift in Sources */,
 				68BC31152CC16F47000B95CF /* SceneDelegate.swift in Sources */,
+				68BC31492CC1701E000B95CF /* LoginViewController.swift in Sources */,
+				68BC31452CC16F8A000B95CF /* OAuthLoginManager.m in Sources */,
+				68C5CEE42CC2155700CBAC06 /* CoreDataManager.swift in Sources */,
+				68C5CEDC2CC1F9D200CBAC06 /* HomeViewController.swift in Sources */,
+				68C5CEE12CC2142D00CBAC06 /* DeviceInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,17 +664,19 @@
 		};
 		68BC313A2CC16F49000B95CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5748702303C4E777A6260FCE /* Pods-USTTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFL5BCP2DB;
+				DEVELOPMENT_TEAM = 24N5Q6786S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = USTTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -455,9 +684,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.UST.app.USTTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.usttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "USTTest/Services/USTTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,17 +696,19 @@
 		};
 		68BC313B2CC16F49000B95CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B04A722E99AADC2EFDBBD1B9 /* Pods-USTTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JFL5BCP2DB;
+				DEVELOPMENT_TEAM = 24N5Q6786S;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = USTTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -483,9 +716,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.UST.app.USTTest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.usttest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "USTTest/Services/USTTest-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -493,6 +727,7 @@
 		};
 		68BC313D2CC16F49000B95CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6961D9F03DF4038095750B5 /* Pods-USTTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +748,7 @@
 		};
 		68BC313E2CC16F49000B95CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3AD0AE13CB28861D4BABD8 /* Pods-USTTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +769,7 @@
 		};
 		68BC31402CC16F49000B95CF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A353173084EAB1426A500FDC /* Pods-USTTest-USTTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +788,7 @@
 		};
 		68BC31412CC16F49000B95CF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C49E692C623DCEF50CE8F75 /* Pods-USTTest-USTTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,6 +845,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		68C5CEE52CC2166D00CBAC06 /* USTTest.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68C5CEE62CC2166E00CBAC06 /* USTTest.xcdatamodel */,
+			);
+			currentVersion = 68C5CEE62CC2166E00CBAC06 /* USTTest.xcdatamodel */;
+			name = USTTest.xcdatamodeld;
+			path = /Users/manickam/Desktop/USTTest/USTTest/Coredata/USTTest.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 68BC31072CC16F47000B95CF /* Project object */;
 }
