@@ -30,8 +30,16 @@ This is an iOS application developed in Objective-C and Swift 5. The app allows 
 Navigate to the project directory and open the .xcworkspace file.
 3. **Install any dependencies :**
 
+To install the required dependencies for this project, you can use CocoaPods. Add the following line to your `Podfile`:
+
   pod 'GoogleSignIn', '~> 6.0'
-Select the appropriate simulator or device and run the app.
+
+  pod install
+
+4. **Run the App**
+Open the .xcworkspace file created by CocoaPods.
+Select the appropriate simulator or physical device.
+Build and run the app by clicking the play button or using the keyboard shortcut Command + R.
 
 ## Usage
 - **Login**: Open the app and tap the "Login with Google" button to authenticate.
