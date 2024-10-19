@@ -23,7 +23,7 @@ This is an iOS application developed in Objective-C and Swift 5. The app allows 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/USTTest.git
+   git clone https://github.com/manickvenkat29/USTTest.git
 
 2. **Open the project in Xcode:**
 
