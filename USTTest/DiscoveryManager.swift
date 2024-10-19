@@ -22,8 +22,7 @@ class DeviceDiscoveryManager: NSObject, NetServiceBrowserDelegate, NetServiceDel
     func startDiscovery(){
         netServiceBrowser = NetServiceBrowser()
         netServiceBrowser.delegate = self
-        netServiceBrowser.searchForServices(ofType: "_airplay.tcp", inDomain: "")
-        print("startDiscovery")
+        netServiceBrowser.searchForServices(ofType: "_airplay._tcp.", inDomain: "")
     }
     
     func stopDiscovery(){
@@ -32,7 +31,6 @@ class DeviceDiscoveryManager: NSObject, NetServiceBrowserDelegate, NetServiceDel
     
     func netServiceBrowser(_ browser: NetServiceBrowser, didFind service: NetService, moreComing: Bool) {
         print("Found service: \(service.name)")
-
         discoveredDevices.append(service)
         service.delegate = self
         service.resolve(withTimeout: 10.0)
@@ -40,19 +38,12 @@ class DeviceDiscoveryManager: NSObject, NetServiceBrowserDelegate, NetServiceDel
     
     func netServiceDidResolveAddress(_ sender: NetService) {
         guard let addressData = sender.addresses?.first else { return }
-        print(addressData);
         var hostname = [CChar](repeating: 0, count: Int(NI_MAXHOST))
-        
-        // Convert 'addressData' to Data if needed
-        let addressDataT = addressData as Data
-        
-        // Use withUnsafeBytes to get a pointer to the underlying bytes
-        addressDataT.withUnsafeBytes { (rawBufferPointer: UnsafeRawBufferPointer) in
+        addressData.withUnsafeBytes { (rawBufferPointer: UnsafeRawBufferPointer) in
             let unsafePointer = rawBufferPointer.baseAddress!.assumingMemoryBound(to: sockaddr.self)
-            
             let result = getnameinfo(
                 unsafePointer,
-                socklen_t(addressDataT.count),
+                socklen_t(addressData.count),
                 &hostname,
                 socklen_t(hostname.count),
                 nil,
@@ -61,12 +52,22 @@ class DeviceDiscoveryManager: NSObject, NetServiceBrowserDelegate, NetServiceDel
             )
             
             if result == 0, let ipAddress = String(validatingUTF8: hostname) {
-                let device = Device(name: sender.name, ipAddress: ipAddress, status: "Reachable")
-                CoreDataManager.shared.saveDevice(name: sender.name, ipAddress: ipAddress, status: "Reachable")
-                onDeviceDiscovered?(device)
+                // Check reachability
+                let oAuthManager = OAuthLoginManager()
+
+                oAuthManager.checkNetworkReachability { status in
+                    if status {
+                        let deviceStatus = (status != false) ? "Reachable" : "Un-Reachable"
+                        CoreDataManager.shared.updateDeviceStatus(ipAddress: ipAddress, status: deviceStatus)
+                        
+                        let device = Device(name: sender.name, ipAddress: ipAddress, status: deviceStatus)
+                        self.onDeviceDiscovered?(device)
+                    } else {
+                        print("Network is not reachable")
+                    }
+                }
             }
         }
-        
-        
     }
+        
 }

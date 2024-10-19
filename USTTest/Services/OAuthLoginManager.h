@@ -24,7 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (BOOL)isUserLoggedIn;
 - (void)silentLoginWithCompletion:(void (^)(BOOL success))completion;
 - (void)logout;
-
+- (void)checkNetworkReachability:(void (^)(BOOL reachable))completion;
 @end
 
 NS_ASSUME_NONNULL_END
