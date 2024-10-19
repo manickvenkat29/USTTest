@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		02605A0E7B9973FDBD106377 /* Pods_USTTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0ED4E5A61D01EBF494C0311 /* Pods_USTTest.framework */; };
+		684DE09E2CC34D6A0065A815 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DE09D2CC34D6A0065A815 /* NetworkManager.swift */; };
+		684DE0A02CC350150065A815 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DE09F2CC350150065A815 /* DetailViewController.swift */; };
+		684DE0A22CC3E77E0065A815 /* GeoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DE0A12CC3E77E0065A815 /* GeoInfo.swift */; };
+		684DE0A52CC3EE8D0065A815 /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684DE0A42CC3EE8D0065A815 /* DeviceTableViewCell.swift */; };
 		68BC31132CC16F47000B95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31122CC16F47000B95CF /* AppDelegate.swift */; };
 		68BC31152CC16F47000B95CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31142CC16F47000B95CF /* SceneDelegate.swift */; };
-		68BC31172CC16F47000B95CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31162CC16F47000B95CF /* ViewController.swift */; };
 		68BC311C2CC16F49000B95CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68BC311B2CC16F49000B95CF /* Assets.xcassets */; };
 		68BC311F2CC16F49000B95CF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 68BC311E2CC16F49000B95CF /* Base */; };
 		68BC312A2CC16F49000B95CF /* USTTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31292CC16F49000B95CF /* USTTestTests.swift */; };
@@ -20,7 +23,6 @@
 		68BC31492CC1701E000B95CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31482CC1701E000B95CF /* LoginViewController.swift */; };
 		68C5CED82CC1E51A00CBAC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BC31182CC16F47000B95CF /* Main.storyboard */; };
 		68C5CEDC2CC1F9D200CBAC06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */; };
-		68C5CEDE2CC202CC00CBAC06 /* DeviceHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */; };
 		68C5CEE12CC2142D00CBAC06 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */; };
 		68C5CEE42CC2155700CBAC06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */; };
 		68C5CEE72CC2166E00CBAC06 /* USTTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE52CC2166D00CBAC06 /* USTTest.xcdatamodeld */; };
@@ -49,10 +51,13 @@
 /* Begin PBXFileReference section */
 		4C49E692C623DCEF50CE8F75 /* Pods-USTTest-USTTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest-USTTestUITests.release.xcconfig"; path = "Target Support Files/Pods-USTTest-USTTestUITests/Pods-USTTest-USTTestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		5748702303C4E777A6260FCE /* Pods-USTTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-USTTest.debug.xcconfig"; path = "Target Support Files/Pods-USTTest/Pods-USTTest.debug.xcconfig"; sourceTree = "<group>"; };
+		684DE09D2CC34D6A0065A815 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		684DE09F2CC350150065A815 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		684DE0A12CC3E77E0065A815 /* GeoInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoInfo.swift; sourceTree = "<group>"; };
+		684DE0A42CC3EE8D0065A815 /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
 		68BC310F2CC16F47000B95CF /* USTTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = USTTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68BC31122CC16F47000B95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68BC31142CC16F47000B95CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		68BC31162CC16F47000B95CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		68BC31192CC16F47000B95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		68BC311B2CC16F49000B95CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68BC311E2CC16F49000B95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,7 +73,6 @@
 		68BC31482CC1701E000B95CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68C5CED42CC1E17C00CBAC06 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceHomeViewController.swift; sourceTree = "<group>"; };
 		68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		68C5CEE62CC2166E00CBAC06 /* USTTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USTTest.xcdatamodel; sourceTree = "<group>"; };
@@ -121,6 +125,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		684DE0A32CC3EE750065A815 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				684DE0A42CC3EE8D0065A815 /* DeviceTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		68BC31062CC16F47000B95CF = {
 			isa = PBXGroup;
 			children = (
@@ -153,7 +165,6 @@
 				68BC31422CC16F4E000B95CF /* Services */,
 				68BC31122CC16F47000B95CF /* AppDelegate.swift */,
 				68BC31142CC16F47000B95CF /* SceneDelegate.swift */,
-				68BC31162CC16F47000B95CF /* ViewController.swift */,
 				68BC31182CC16F47000B95CF /* Main.storyboard */,
 				68BC311B2CC16F49000B95CF /* Assets.xcassets */,
 				68BC311D2CC16F49000B95CF /* LaunchScreen.storyboard */,
@@ -185,6 +196,7 @@
 				68BC31462CC16FBD000B95CF /* OAuthLoginManager.h */,
 				68BC31442CC16F8A000B95CF /* OAuthLoginManager.m */,
 				68BC31432CC16F8A000B95CF /* USTTest-Bridging-Header.h */,
+				684DE09D2CC34D6A0065A815 /* NetworkManager.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -192,9 +204,10 @@
 		68BC31472CC17006000B95CF /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				684DE0A32CC3EE750065A815 /* Views */,
 				68BC31482CC1701E000B95CF /* LoginViewController.swift */,
 				68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */,
-				68C5CEDD2CC202CB00CBAC06 /* DeviceHomeViewController.swift */,
+				684DE09F2CC350150065A815 /* DetailViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -203,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */,
+				684DE0A12CC3E77E0065A815 /* GeoInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -477,9 +491,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				684DE0A02CC350150065A815 /* DetailViewController.swift in Sources */,
+				684DE09E2CC34D6A0065A815 /* NetworkManager.swift in Sources */,
+				684DE0A52CC3EE8D0065A815 /* DeviceTableViewCell.swift in Sources */,
+				684DE0A22CC3E77E0065A815 /* GeoInfo.swift in Sources */,
 				68C5CEE72CC2166E00CBAC06 /* USTTest.xcdatamodeld in Sources */,
-				68BC31172CC16F47000B95CF /* ViewController.swift in Sources */,
-				68C5CEDE2CC202CC00CBAC06 /* DeviceHomeViewController.swift in Sources */,
 				68C5CEEA2CC21C7B00CBAC06 /* DiscoveryManager.swift in Sources */,
 				68BC31132CC16F47000B95CF /* AppDelegate.swift in Sources */,
 				68BC31152CC16F47000B95CF /* SceneDelegate.swift in Sources */,
@@ -675,6 +691,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = USTTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AirPlay Finder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -707,6 +724,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = USTTest/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "AirPlay Finder";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";

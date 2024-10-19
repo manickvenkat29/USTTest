@@ -31,32 +31,23 @@
 
 - (void)loginWithCompletion:(void (^)(BOOL success, NSString * _Nullable token))completion {
     GIDSignIn *signIn = [GIDSignIn sharedInstance];
-
-    // Get the active window's rootViewController
     UIWindow *keyWindow = [UIApplication sharedApplication].windows.firstObject;
     UIViewController *rootViewController = keyWindow.rootViewController;
 
-    // Create a GIDConfiguration object using your client ID
     GIDConfiguration *config = [[GIDConfiguration alloc] initWithClientID:@"998529752940-ftp63qcicf0b16dqc6ajnn4tgfslkmal.apps.googleusercontent.com"];
-
-    // Initiate sign-in
     [signIn signInWithConfiguration:config
              presentingViewController:rootViewController
                              callback:^(GIDGoogleUser * _Nullable user, NSError * _Nullable error) {
         if (error) {
-            // Handle sign-in error, return "NO" and "nil" for failure
             completion(NO, nil);
             return;
         }
 
-        // Access token from user's authentication
         self.token = user.authentication.accessToken;
 
-        // Save the token in user defaults
         [[NSUserDefaults standardUserDefaults] setObject:self.token forKey:@"OAuthToken"];
         [[NSUserDefaults standardUserDefaults] synchronize];
 
-        // Pass "YES" and the token back through the completion handler
         completion(YES, self.token);
     }];
 }
@@ -69,7 +60,7 @@
                     if (reachable) {
                         completion(YES);
                     } else {
-                        [self logout]; // Force logout if network is not reachable
+                        [self logout];
                         completion(NO);
                     }
                 }];
@@ -82,7 +73,7 @@
     self.token = nil;
     [[NSUserDefaults standardUserDefaults] removeObjectForKey:@"OAuthToken"];
     [[NSUserDefaults standardUserDefaults] synchronize];
-    [[GIDSignIn sharedInstance] signOut]; // Sign out from Google
+    [[GIDSignIn sharedInstance] signOut];
 }
 
 - (void)checkNetworkReachability:(void (^)(BOOL reachable))completion {
@@ -96,25 +87,6 @@
     });
 
     nw_path_monitor_start(monitor);
-}
-
-+(UIViewController *)parentController {
-    
-    UIWindow *foundWindow = nil;
-    NSArray *scenes=[[[UIApplication sharedApplication] connectedScenes] allObjects];
-    NSArray *windows=[[scenes objectAtIndex:0] windows];
-    for (UIWindow  *window in windows) {
-        if (window.isKeyWindow) {
-            foundWindow = window;
-            break;
-        }
-    }
-    UIViewController* parentController = foundWindow.rootViewController;
-    while( parentController.presentedViewController &&
-          parentController != parentController.presentedViewController ){
-        parentController = parentController.presentedViewController;
-    }
-    return  parentController;
 }
 
 - (BOOL)isUserLoggedIn {

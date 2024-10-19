@@ -13,18 +13,18 @@ class CoreDataManager {
     
     private init() {}
     
-    var persistenContainer: NSPersistentContainer {
-        let container = NSPersistentContainer(name: "USTTest")
-        container.loadPersistentStores { _, error in
-            if let error = error {
-                fatalError("Failed to load Core Data stack: \(error)")
+    lazy var persistContainer: NSPersistentContainer = {
+            let container = NSPersistentContainer(name: "USTTest")
+            container.loadPersistentStores { _, error in
+                if let error = error {
+                    fatalError("Failed to load Core Data stack: \(error)")
+                }
             }
-        }
-        return container
-    }
+            return container
+        }()
     
     var context: NSManagedObjectContext {
-        return persistenContainer.viewContext
+        return persistContainer.viewContext
     }
     
     private func saveContext() {
@@ -39,7 +39,7 @@ class CoreDataManager {
     
     
     func saveDevice(name: String, ipAddress: String, status: String){
-        let device = DeviceIn(context: context)
+        let device = DeviceInfo(context: context)
         device.name = name
         device.ipAddress = ipAddress
         device.status = status
@@ -48,18 +48,20 @@ class CoreDataManager {
     }
     
     
-    func fetchDevices() -> [DeviceIn] {
-            let fetchRequest: NSFetchRequest<DeviceIn> = DeviceIn.fetchRequest()
-            do {
-                return try context.fetch(fetchRequest)
-            } catch {
-                print("Failed to fetch devices: \(error)")
-                return []
-            }
+    func fetchDevices() -> [DeviceInfo] {
+        let context = persistContainer.viewContext
+        let fetchRequest: NSFetchRequest<DeviceInfo> = DeviceInfo.fetchRequest()
+        
+        do {
+            return try context.fetch(fetchRequest)
+        } catch {
+            print("Failed to fetch devices: \(error)")
+            return []
+        }
     }
     
     func updateDeviceStatus(ipAddress: String, status: String){
-        let fetchRequest: NSFetchRequest<DeviceIn> = DeviceIn.fetchRequest()
+        let fetchRequest: NSFetchRequest<DeviceInfo> = DeviceInfo.fetchRequest()
         fetchRequest.predicate = NSPredicate(format: "ipAddress == %@", ipAddress)
         
         do {
