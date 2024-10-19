@@ -2,8 +2,6 @@
 
 This is an iOS application developed in Objective-C and Swift 5. The app allows users to log in using Google OAuth 2.0 and discover AirPlay devices on their network.
 
-![Simulator Screenshot - iPhone 15 Pro Max - 2024-10-19 at 21 43 03](https://github.com/user-attachments/assets/52ce30dc-263e-4488-a7a4-e2a69b0a852c) ![Simulator Screenshot - iPhone 15 Pro Max - 2024-10-19 at 21 43 33](https://github.com/user-attachments/assets/8da9eea0-3444-4e86-b9c7-bd85d7d3ac32) ![Simulator Screenshot - iPhone 15 Pro Max - 2024-10-19 at 21 43 39](https://github.com/user-attachments/assets/1a63e8bc-6793-4d39-9a62-d555aee8ca93)
-
 ## Features
 
 - **Login Screen**: Users can log in using Google OAuth 2.0 authentication.
