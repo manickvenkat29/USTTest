@@ -27,16 +27,16 @@ This is an iOS application developed in Objective-C and Swift 5. The app allows 
 
 2. **Open the project in Xcode:**
 
-Navigate to the project directory and open the .xcodeproj file.
+Navigate to the project directory and open the .xcworkspace file.
 3. **Install any dependencies :**
 
   pod 'GoogleSignIn', '~> 6.0'
 Select the appropriate simulator or device and run the app.
 
 ## Usage
-Login: Open the app and tap the "Login with Google" button to authenticate.
-Discover Devices: Once logged in, the app will automatically discover AirPlay devices on your network and display them in a list.
-View Device Details: Tap on any discovered device to view more details, including the public IP address and geographical information.
+- **Login**: Open the app and tap the "Login with Google" button to authenticate.
+- **Discover Devices**: Once logged in, the app will automatically discover AirPlay devices on your network and display them in a list.
+- **View Device Details**: Tap on any discovered device to view more details, including the public IP address and geographical information.
 
 ## Project Structure
 USTTest
