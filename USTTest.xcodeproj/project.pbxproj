@@ -23,7 +23,6 @@
 		68BC31492CC1701E000B95CF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68BC31482CC1701E000B95CF /* LoginViewController.swift */; };
 		68C5CED82CC1E51A00CBAC06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68BC31182CC16F47000B95CF /* Main.storyboard */; };
 		68C5CEDC2CC1F9D200CBAC06 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */; };
-		68C5CEE12CC2142D00CBAC06 /* DeviceInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */; };
 		68C5CEE42CC2155700CBAC06 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */; };
 		68C5CEE72CC2166E00CBAC06 /* USTTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE52CC2166D00CBAC06 /* USTTest.xcdatamodeld */; };
 		68C5CEEA2CC21C7B00CBAC06 /* DiscoveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5CEE92CC21C7B00CBAC06 /* DiscoveryManager.swift */; };
@@ -73,7 +72,6 @@
 		68BC31482CC1701E000B95CF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		68C5CED42CC1E17C00CBAC06 /* AppAuth.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C5CEDB2CC1F9D200CBAC06 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfo.swift; sourceTree = "<group>"; };
 		68C5CEE32CC2155700CBAC06 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		68C5CEE62CC2166E00CBAC06 /* USTTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = USTTest.xcdatamodel; sourceTree = "<group>"; };
 		68C5CEE92CC21C7B00CBAC06 /* DiscoveryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryManager.swift; sourceTree = "<group>"; };
@@ -215,7 +213,6 @@
 		68C5CEDF2CC2141400CBAC06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				68C5CEE02CC2142D00CBAC06 /* DeviceInfo.swift */,
 				684DE0A12CC3E77E0065A815 /* GeoInfo.swift */,
 			);
 			path = Models;
@@ -503,7 +500,6 @@
 				68BC31452CC16F8A000B95CF /* OAuthLoginManager.m in Sources */,
 				68C5CEE42CC2155700CBAC06 /* CoreDataManager.swift in Sources */,
 				68C5CEDC2CC1F9D200CBAC06 /* HomeViewController.swift in Sources */,
-				68C5CEE12CC2142D00CBAC06 /* DeviceInfo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
